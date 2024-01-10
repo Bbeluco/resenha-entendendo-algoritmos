@@ -2,7 +2,8 @@
 
 *com a pesquisa binaria voce chuta um elememento intermediario e elimina metade dos numeros restantes a cada tentativa.*
 
-*** O problema ***
+**O problema**
+
 Suponha que voce tem uma lista telefonica e deseja encontrar alguem que se chama Mauro, voce poderia ir do comeco da lista (ou seja, da letra A) ate encontrar a letra "M", ou podemos ir diretamente para o meio da lista telefonica e comecar de la a pesquisar pelo "M" (ja que sabemos que em ordem alfabetica o M esta adiante do meio da lista). Apos encontrar a primeira letra do nome, ai sim voce pode procurar por outras letras que compoe a palavra que voce esta esperando.
 
 > Feito o caso acima, conseguimos reduzir bastante a area de pesquisa, o que antes precisariamos correr do inicio ate o M, podemos simplesmente ir ao mesmo local mas encurtando o caminho.
@@ -37,6 +38,6 @@ Todos os calculos de big O sao dados em log na base 2.
 - O(N * log N) = algoritmo rapido de ordenacao
 - O(n^2) = algoritmo lento de ordenacao
 - O(n!) = algoritmo mais lento de todos
-- O(1) = Encontrou o que precisa na primeira tentativa.
+- O(1) = tempo constante
 
 Sempre que falamos em ciclos de exec em algoritmos estamos levando em conta a pior das hipoteses, supondo que termos que passar por todo array/tabela/hash para encontrar o valor desejado.
