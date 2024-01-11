@@ -20,3 +20,14 @@ Esse tipo de estrutra pode ser interessante caso quisessemos ler cada um dos ite
 ## Acesso aleatorio X Acesso sequencial
 Aleatorio = Acessa um elemento qualquer apenas indicando o numero
 Sequencial = Deve acessar todos os elementos anteriores para so depois acessar o elemento desejado
+
+# Ordenador por selecao
+Imagine que voce possui um array com os dados da quantidade de vezes que cada em pessoa de sao paulo dirigiu um carro durante o ano. Tendo posse dessa info, gostariamos de organizar em um ranking as 10 pessoas que mais dirigiram no ano passado.
+
+Se resolvermos esse problema com "Ordenador por selecao", basicamente teriamos o seguinte fluxo:
+    1. Escaneie a lista inteira e pegue o motorista com maior valor
+    2. Adicione esse motorista no ranking
+    3. Escaneie toda a lista novamente (excluindo o motorista anterior colocado no ranking)
+    4. Repita o passo 3 ate preencher completamente o ranking
+
+Como eh possivel perceber, esse algoritmo acaba sendo muito custoso, pois sempre vamos escanear a lista varias vezes (O(n^2))
