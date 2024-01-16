@@ -41,3 +41,17 @@ Todos os calculos de big O sao dados em log na base 2.
 - O(1) = tempo constante
 
 Sempre que falamos em ciclos de exec em algoritmos estamos levando em conta a pior das hipoteses, supondo que termos que passar por todo array/tabela/hash para encontrar o valor desejado.
+
+### Constantes em Big(O)
+Quando calcumaos o Big(o) estamos pensando o tempo de execucao que ele demora. *Mas como eh possivel nos importamos com tempo de execucao sendo que o Big(O) se importa com ciclos de codigo?*
+
+A resposta para essa pergunta esta em um detalhe sutil que o Big(O) apresenta, quando escrevemos por exemplo O(n), estamos na realidade escrevendo o seguinte:
+
+C * n
+
+Na equacao acima "C" eh o **tempo** de execucao que o algoritmo leva para executar **uma** unica interacao. Como geralmente o tempo para executar uma instrucao eh o mesmo (Salvo casos que colocamos algum "sleep" ou lemos um arquivo que eh muito demorado para abrir) acabamos ocultando essa info no Big(O).
+
+### Caso medio X pior caso
+Esse conceito na realidade eh bem simples, quando calculamos o Big(O) do codigo levamos em conta o seu pior caso, mais isso nem sempre eh verdade. Um algoritmo de quicksort (Capitulo 4/quicksort/main.cpp) tem sempre sua execucao no caso medio, isso significa que dificilmente o pior caso sera atingido.
+
+Quando atingimos o caso medio, literalmente significa que teremos menos iteracoes do algoritmo, o que em alguns casos (como do quicksort por exemplo) pode ate diminuir o Big(O)
