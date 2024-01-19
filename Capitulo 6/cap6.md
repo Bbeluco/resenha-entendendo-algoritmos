@@ -25,6 +25,12 @@ O algoritmo busca responder 2 perguntas principais
 1. Existe um caminho do ponto A ate o ponto B?
 2. Qual caminho minimo do ponto A ate o ponto B?
 
+**Ordenacao topologica** eh o nome que damos a um grafo que tenha seus itens ordenados. Imagine uma arvore genealogica, Eu dependo dos meus pais, que dependem dos seus pais, e assim por diante. Se colocarmos isso em grafo iremos perceber que estamos ordenando e ao mesmo tempo montando um grafo.
+
+Um ponto interessante de observar eh que na ordenacao topologia e seta sempre aponta para frente (ou para baixo depende do modo que esta montando). Por exemplo, eu dependi dos meus pais para nascer, mas meus pais nao dependeram de mim para nascer. Isso faz com que eu aponte para eles mas nao o contrario.
+
+Quando caimos em casos semelhante ao do paragrafo de cima dizemos que o grafo eh uma **Arvore**
+
 **Redes sociais**
 A pesquisa em largura sempre da preferencia por encontrar o caminho mais proximo, vamos supor que voce esta no LinkedIn e deseja encontrar um emprego. Voce pode ir na opcao de listagem e verificar que voce tem como pesquisar por conexoes sua de primeiro, segundo e terceiro grau.
 
